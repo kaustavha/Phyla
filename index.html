@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<meta property="og:image" content="http://f0.bcbits.com/img/0000919721_20.jpg"/>
+	<meta property="og:title" content="PHYLA DIGITAL - ELECTRONIC MUSIC"/>
+	<meta property="og:url" content="www.phyladigital.com"/>
+	<meta property="og:type" content="article"/>
+	<title>PHYLA DIGITAL - ELECTRONIC MUSIC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Music group website for PHYLA DIGITAL">
+	<meta name="author" content="Kaustav Haldar http://kaustav.me">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Average+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
+	
+
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	
+
+
+	<style>
+	.biosHolder{
+		overflow: scroll;
+		width: 120px;
+		height:725px;
+		margin-top:30px;
+		float: right;
+	}
+	.biosHolder img{
+		padding: 2px;
+		cursor:pointer;
+	}
+	.biosHolder img:hover{
+		padding: 2px;
+		cursor:pointer;
+		opacity: 0.5;
+	}
+	.social{
+		height: 940px;		
+		margin-top:10px;
+	}
+	#intro { 
+		background: url(img/phylaBar.jpg) 0; 
+		height: auto;  
+		padding-bottom: 355px;
+		margin: 0 auto; 
+		width: 100%; 
+		position: relative; 
+		box-shadow: 0 0 50px rgba(0,0,0,0.8);
+		background-size: cover;
+		background-repeat:no-repeat;
+
+	}
+	#logo {
+		width: 15%;
+		margin-left:-3%;
+		position: fixed;
+		margin-top: -1%;
+	}
+	.card{    	
+		height: 250px;
+	width: 100%;
+
+      position: relative;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+	}
+	.artist3D{
+		 width: 100%;
+      height: 100%;
+      position: relative;
+      margin: 10px 5px 40px;
+  
+      -webkit-perspective: 800px;
+         -moz-perspective: 800px;
+           -o-perspective: 800px;
+              perspective: 800px;
+	}
+	.card figure {
+    display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 140px;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+}
+
+.back{	
+	opacity: 0.5;
+	cursor: pointer;
+	height: 250px !important;
+	width:250px;
+	position: absolute;
+	 background: black;
+	 -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+}
+.back p{
+	font-size:10px;
+}
+.flipped {
+    -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+}
+.row{width:120%;}
+.front h2{
+	color: grey;
+	postion: absolute;
+	z-index:10;
+	margin-top: -35px;
+	margin-left: -15px;
+font-family: 'Milonga', cursive;
+font-size: 15px;
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3)
+}
+body { background: #E9E9E9; }
+h2 { text-align: center; color: #CCC; }
+a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: #999;
+}
+
+a:hover { color: #777; }
+
+/* NAVIGATION */
+.navigation {
+  list-style: none;
+  padding: 0;
+  width: 200px; 
+  height: 40px; 
+  margin: 20px auto;
+  background: grey;
+  position: fixed; 
+  z-index: 100;
+}
+
+.navigation, .navigation a.main {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+.navigation:hover, .navigation:hover a.main {
+  border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+}
+
+.navigation a.main {
+  display: block; 
+  height: 40px;
+  font: bold 15px/40px arial, sans-serif; 
+  text-align: center; 
+  text-decoration: none; 
+  color: #FFF;  
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  position: relative;
+  z-index: 100;
+}
+
+.navigation:hover a.main {
+  color: rgba(255,255,255,0.6);
+  background: rgba(0,0,0,0.04);
+}
+
+.navigation li { 
+  width: 200px; 
+  height: 40px;
+  background: #F7F7F7;
+  font: normal 12px/40px arial, sans-serif !important; 
+  color: #999;
+  text-align: center;
+  margin: 0;
+  -webkit-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: perspective(350px) rotateX(-90deg);
+  -o-transform: perspective(350px) rotateX(-90deg);
+  transform: perspective(350px) rotateX(-90deg);
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+  -webkit-box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+}
+
+.navigation li:nth-child(even) { background: #F5F5F5; }
+.navigation li:nth-child(odd) { background: #EFEFEF; }
+
+.navigation li.n1 { 
+  -webkit-transition: 0.2s linear 0.8s;
+  -o-transition: 0.2s linear 0.8s;
+  transition: 0.2s linear 0.8s;
+}
+.navigation li.n2 {
+  -webkit-transition: 0.2s linear 0.6s;
+  -o-transition: 0.2s linear 0.6s;
+  transition: 0.2s linear 0.6s;
+}
+.navigation li.n3 {
+  -webkit-transition: 0.2s linear 0.4s;
+  -o-transition: 0.2s linear 0.4s;
+  transition: 0.2s linear 0.4s;
+}
+.navigation li.n4 { 
+  -webkit-transition:0.2s linear 0.2s;
+  -o-transition:0.2s linear 0.2s;
+  transition:0.2s linear 0.2s;
+}
+.navigation li.n5 {
+  border-radius: 0px 0px 4px 4px;
+  -webkit-transition: 0.2s linear 0s;
+  -o-transition: 0.2s linear 0s;
+  transition: 0.2s linear 0s;
+}
+
+.navigation:hover li {
+  -webkit-transform: perspective(350px) rotateX(0deg);
+  -o-transform: perspective(350px) rotateX(0deg);
+  transform: perspective(350px) rotateX(0deg);
+  -webkit-transition:0.2s linear 0s;
+  -o-transition:0.2s linear 0s;
+  transition:0.2s linear 0s;
+}
+.navigation:hover .n2 {
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.navigation:hover .n3 {
+  -webkit-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.navigation:hover .n4 {
+  transition-delay: 0.6s;
+  -o-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+.navigation:hover .n5 {
+  -webkit-transition-delay: 0.8s;
+  -o-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+.hide{
+	opacity: 0;
+	visibility: hidden;
+}
+.fixedNav{
+	position:fixed;
+	margin-top:13%;
+	margin-left: 1%;
+}
+.releaseBox{
+	height:870px;
+	opacity:0.8;
+}
+	</style>
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="../assets/ico/favicon.png">
+</head>
+<body>
+
+	<section id="intro">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span12">				
+					<img id="logo" src="img/phylaLogo.png">
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2">
+		<img id="logo" src="img/phylaLogo.png">
+  <ul class="nav nav-tabs nav-stacked fixedNav">
+  <li><a tabindex="-1" id="navArtists" href="#artists">Artists</a></li>
+				<li><a tabindex="-1" href="#releases">About</a></li>				 
+				 <li><a tabindex="-1" href="#">etc</a></li>
+				<li><a tabindex="-1" href="#">b</a></li>
+  </ul></div>
+			<div class="span8">			
+	<section id="artists" class="show">		
+	<h2>Artists</h2>
+			<div class="row">	
+					<div class="span2 artist3D">
+					<div class="card" id="1">
+							<figure class="front">
+								<img src="./img/artists/FAUXE(SG).png">
+								<h2>FAUXE (SG)</h2>
+							</figure>
+							<figure class="back">
+							<img src="./img/artists/FAUXE(SG).png">
+								<p style="margin-top: -350px;">lorem impsum lade da</p>
+							</figure>
+						</div>
+					</div>
+					<div class="span2 artist3D">
+						<div class="card" id="2">
+							<figure class="front">
+								<img src="./img/artists/DIPHASIC(SG).png">
+								<h2>DIPHASIC (SG)</h2>
+							</figure>
+							<figure class="back">
+								<p>lorem impsum dolor amet lade da</p>
+							</figure>
+						</div>
+					</div>
+					<div class="span2 artist3D">
+						<div class="card" id="3">
+							<figure class="front">
+								<img src="./img/artists/NUANCE(FI).png">
+								<h2>NUANCE (FI)</h2>
+							</figure>
+							<figure class="back">
+								<p></p>
+							</figure>
+						</div>
+					</div>
+					<div class="span2 artist3D">
+						<div class="card" id="4">
+							<figure class="front">
+								<img src="./img/artists/COSA-NOSTRA(SG).png">
+								<h2>COSA-NOSTRA (SG)</h2>
+							</figure>
+							<figure class="back">
+								<p></p>
+							</figure>
+						</div>
+					</div>
+						<div class="span2 artist3D">
+						<div class="card" id="5">
+							<figure class="front">
+								<img src="./img/artists/ECHO-PRINCE(GEMA)(SG).png">
+								<h2>ECHO-PRINCE (A.K.A GEMA) (SG)</h2>
+							</figure>
+							<figure class="back">
+								<p></p>
+							</figure>
+						</div>
+					</div>
+						</div>
+						<div class="row">
+								<div class="span2 artist3D">
+					<div class="card" id="6">
+							<figure class="front">
+								<img src="./img/artists/UNCONVENTIONAL-SCIENCE(L.A).png">
+								<h2>UNCONVENTIONAL SCIENCE (L.A)</h2>
+							</figure>
+							<figure class="back">
+								<p>we</p>
+							</figure>
+						</div>
+					</div>
+					<div class="span2 artist3D">
+						<div class="card" id="7">
+							<figure class="front">
+								<img src="./img/artists/SKEPTIK(IN).png">
+								<h2>SKEPTIK (IN)</h2>
+							</figure>
+							<figure class="back">
+								<p></p>
+							</figure>
+						</div>
+					</div>
+					<div class="span2 artist3D">
+						<div class="card" id="8">
+							<figure class="front">
+								<img src="./img/artists/IYER(SG).png">
+								<h2>IYER (SG)</h2>
+							</figure>
+							<figure class="back">
+								<p></p>
+							</figure>
+						</div>
+					</div>
+					<div class="span2 artist3D">
+						<div class="card" id="9">
+							<figure class="front">
+								<img src="./img/artists/JAYDAH(SG).png">
+								<h2>JAYDAH (SG)</h2>
+							</figure>
+							<figure class="back">
+								<p></p>
+							</figure>
+						</div>
+					</div>
+						<div class="span2 artist3D">
+						<div class="card" id="10">
+							<figure class="front">
+								<img src="./img/artists/NAZ(SG).png">
+								<h2>NAZ (SG)</h2>
+							</figure>
+							<figure class="back">
+								<p></p>
+							</figure>
+						</div>
+					</div>
+					</div> <!-- end row -->
+					<div class="row">
+								<div class="span2 artist3D">
+	<div class="card" id="11">
+							<figure class="front">
+								<img src="./img/artists/SAUCE(SG).png">
+								<h2>SAUCE (AU)</h2>
+							</figure>
+							<figure class="back">
+								<p></p>
+							</figure>
+						</div></div>
+						<div class="span2 artist3D">
+							<div class="card" id="12">
+							<figure class="front">
+								<img src="./img/artists/SCAPEL(SG).png">
+								<h2>SCAPEL (SG)</h2>
+							</figure>
+							<figure class="back">
+								<p></p>
+							</figure>
+						</div></div>
+								</div>
+												
+				</section>
+				<section id="artistBios" class="hide">
+				<h2>Artist Bios</h2>
+				<div class="bio hide" id="bio1" >
+				1
+				</div>
+					<div class="bio hide" id="bio2">
+				2
+				</div>
+					<div class="bio hide" id="bio3" >
+				3
+				</div>
+				<div class="biosHolder">
+					<img id="1" src="./img/artists/FAUXE(SG).png">
+					<img id="2" src="./img/artists/DIPHASIC(SG).png">
+					<img id="3" src="./img/artists/NUANCE(FI).png">
+					<img id="4" src="./img/artists/COSA-NOSTRA(SG).png">
+					<img id="5" src="./img/artists/ECHO-PRINCE(GEMA)(SG).png">
+					<img id="6" src="./img/artists/UNCONVENTIONAL-SCIENCE(L.A).png">
+						<img id="7" src="./img/artists/SKEPTIK(IN).png">
+						<img id="8" src="./img/artists/IYER(SG).png">
+						<img id="9" src="./img/artists/JAYDAH(SG).png">
+						<img  id="10" src="./img/artists/NAZ(SG).png">
+						<img id="11" src="./img/artists/SAUCE(SG).png">
+							<img id="12" src="./img/artists/SCAPEL(SG).png">
+				</div>	
+<div style="margin-top:100%;"></div>		
+				</section>
+				<section>
+				<h2>Releases</h2>
+				<iframe style="border: 0; width: 100%; height: 120px;" src="http://bandcamp.com/EmbeddedPlayer/album=3115090427/size=medium/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://phyla.bandcamp.com/album/insomnia-ep-phyla003">INSOMNIA EP [phyla003] by Diphasic</a></iframe>
+				</section>
+			
+
+				</div>
+	
+			<div class="span2">						
+					<div class="social">
+					<h2>Releases</h2>						
+					<iframe class="releaseBox" src="http://phyla.bandcamp.com#trackInfoInner"></iframe>
+				</div>
+				</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	
+
+
+
+
+</body>
+
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/scroll.js"></script>
+
+<script type="text/javascript" src="./js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="./js/modernizr-latest.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script>
+$("#intro").fadeOut('slow');
+$("div.card").hover(
+	function () {
+		$(this).toggleClass("flipped");
+	});
+$("div.biosHolder").children().click(
+	function(){
+		var id = $(this).attr('id');
+		$("div.bio").fadeOut();
+		$("div.bio").addClass("hide");
+		$("#bio"+id).removeClass("hide");
+		$("#bio"+id).fadeIn();
+	});
+$("div.card").click(
+	function() {
+		var id = $(this).attr('id');
+		$('#artists').fadeOut();
+		$('#artistBios').removeClass("hide");
+		$('#artistBios').fadeIn();
+		$("#bio"+id).removeClass("hide");
+	});
+$("#navArtists").click(
+	function(){
+		$('artistBios').fadeOut();
+		$('#artistBios').addClass("hide");
+		$('#artists').fadeIn();
+		$("div.bio").addClass("hide");
+	});
+</script>
+</html>
