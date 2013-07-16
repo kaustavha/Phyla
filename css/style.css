@@ -140,6 +140,7 @@ a:hover { color: #777; }
 .hide{
 	opacity: 0;
 	visibility: hidden;
+  height:1px;
 }
 .fixedNav{
 	position:fixed;
@@ -148,7 +149,7 @@ a:hover { color: #777; }
 }
 .releaseBox{
 	height:700px;
-  width:600px;
+  width:975px;
 	opacity:0.8;
   margin-left:-20px;
 }
@@ -174,7 +175,10 @@ a:hover { color: #777; }
   top: 134px;
   left:322px;
 }
-
+#bandCamp{
+  position: absolute;
+  top:0;
+}
 @media (max-width: 480px) {
   .social{
     margin-left:100px;

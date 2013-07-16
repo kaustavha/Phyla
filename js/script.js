@@ -26,6 +26,21 @@ $("#navArtists").click(
 	function(){
 		$('artistBios').fadeOut();
 		$('#artistBios').addClass("hide");
+		$('#artists').removeClass("hide");
 		$('#artists').fadeIn();
 		$("div.bio").addClass("hide");
+		$("#about").addClass("hide");
+		$("#bandCamp").addClass("hide");
+	});
+$("#navAbout").click(
+	function(){
+		$("#artists").addClass("hide");		
+		$("#bandCamp").addClass("hide");
+		$("#about").removeClass("hide");
+	});
+$("#navBandCamp").click(
+	function(){
+		$("#artists").addClass("hide");
+		$("#about").addClass("hide");
+		$("#bandCamp").removeClass("hide");
 	});
