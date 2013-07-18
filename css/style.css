@@ -32,10 +32,8 @@
 
 	}
 	#logo {
-		width: 15%;
-		margin-left:-3%;
-		position: fixed;
-		margin-top: -1%;
+		margin-left: 15%
+		
 	}
   .card{
     height: 250px;
@@ -120,9 +118,9 @@
 	postion: absolute;
 	z-index:10;	
 	margin-left: -15px;
-font-family: 'Milonga', cursive;
+font-family: 'Average Sans', sans-serif;
 font-size: 15px;
-text-shadow: 2px 4px 3px rgba(0,0,0,0.3)
+text-shadow: 2px 3px 3px rgba(0,0,0,0.3)
 }
 body { background: #E9E9E9; }
 h2 { text-align: center; color: #CCC; }
@@ -143,21 +141,22 @@ a:hover { color: #777; }
   height:1px;
 }
 .fixedNav{
-	position:fixed;
-	margin-top:13%;
-	margin-left: 1%;
+  text-align: center;
+}
+.fixed{
+  position: fixed;
+  width:10%;
 }
 .releaseBox{
-	height:700px;
-  width:975px;
+	height:850px;
+  width: 100%;
 	opacity:0.8;
-  margin-left:-20px;
+ 
 }
 .releaseBox2{
   height:700px;
-  width:370px;
-  opacity:0.8;
-  margin-left:110px;
+  width:100%;
+  opacity:0.8; 
 }
 #mainLogo{
   background-size: cover;
@@ -177,6 +176,7 @@ a:hover { color: #777; }
 }
 #bandCamp{
   position: absolute;
+  width:65%;
   top:0;
 }
 .socialButtons{
@@ -190,6 +190,9 @@ a:hover { color: #777; }
   border:1px solid #ddd;
   margin-left:0px;
   width:122%;
+}
+li a{
+  cursor: pointer;
 }
 @media (max-width: 480px) {
   .social{
