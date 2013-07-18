@@ -18,7 +18,7 @@
 	<link href="css/bootstrap-responsive.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Average+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
-	
+	<link href="css/fontello.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
@@ -29,6 +29,7 @@
 	<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
 	<link rel="shortcut icon" href="../assets/ico/favicon.png">
 <script type="text/javascript" src="./js/jquery.min.js"></script>
+
 </head>
 <section id="intro">			
 		<img id="mainLogo" src="img/phyla.jpg">
@@ -45,10 +46,25 @@
 			<div class="span2">
 		<img id="logo" src="img/phylaLogo.png">
   <ul class="nav nav-tabs nav-stacked fixedNav">
-  <li><a tabindex="-1" id="navAbout" href="#">About</a></li>
-				<li><a id="navArtists" tabindex="-1" href="#artists">Artists</a></li>				 
-				 <li><a tabindex="-1" id="navBandCamp" href="#">Bandcamp</a></li>
+  <li><a tabindex="-1" data-pointer="#about" href="#">About</a></li>
+				<li><a data-pointer="#artists" tabindex="-1" href="#artists">Artists</a></li>				 
+				 <li><a tabindex="-1" data-pointer="#bandCamp" href="#">Bandcamp</a></li>
+				 <li><a tabindex="-1" data-pointer="#soundCloud" href="#">SoundCloud</a></li>
 				<li><a tabindex="-1" href="#contact">Contact Us</a></li>
+				
+				<li class="socialIcons">
+				<a class="socialButtons" href="https://twitter.com/phylaDigital">
+				<i class="icon-twitter"></i></a>
+				
+				<a class="socialButtons"  href="https://www.facebook.com/phyl4">
+				<i class="icon-facebook-squared"></i>
+				</a>
+				
+				<a class="socialButtons" href="https://soundcloud.com/phyladigital">
+				<i class="icon-soundcloud"></i>
+				</a>
+			
+				</li>
   </ul></div>
 			<div class="span8">		
 			<section id="about" class="hide">
@@ -234,10 +250,16 @@
 				</div>
 				<div class="row-fluid hidden-phone">
 				<div class="span12">
+				
 				<iframe class="releaseBox" src="http://phyla.bandcamp.com#trackInfo" seamless><a href="http://phyla.bandcamp.com#trackInfo"></a></iframe>
+				
 				</div>
 				
 				</div>
+				</section>
+				<section id="soundCloud" class="hide"> 
+				<h2>Sound Cloud </h2>
+				<iframe class="releaseBox" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fusers%2F13900539&amp;color=ff6600&amp;auto_play=false&amp;show_artwork=true"></iframe>
 				</section>
 		
 

@@ -1,11 +1,8 @@
-$("#intro").delay(2000).slideUp(600);
+$("#intro").delay(2000).fadeOut(400);
 $("#intro").scroll(function(){
 	$("#intro").fadeOut('fast');
 });
-$("div.card").hover(
-	function () {
-		$(this).toggleClass("flipped");
-	});
+
 $("div.biosHolder").children().click(
 	function(){
 		var id = $(this).attr('id');
@@ -22,25 +19,18 @@ $("div.card").click(
 		$('#artistBios').fadeIn();
 		$("#bio"+id).removeClass("hide");
 	});
-$("#navArtists").click(
-	function(){
-		$('artistBios').fadeOut();
-		$('#artistBios').addClass("hide");
-		$('#artists').removeClass("hide");
-		$('#artists').fadeIn();
-		$("div.bio").addClass("hide");
-		$("#about").addClass("hide");
-		$("#bandCamp").addClass("hide");
-	});
-$("#navAbout").click(
-	function(){
-		$("#artists").addClass("hide");		
-		$("#bandCamp").addClass("hide");
-		$("#about").removeClass("hide");
-	});
-$("#navBandCamp").click(
-	function(){
-		$("#artists").addClass("hide");
-		$("#about").addClass("hide");
-		$("#bandCamp").removeClass("hide");
+
+//The following function is responsible for the navbar functionality
+$("li a").click(
+	function(){		
+
+		var a=["#soundCloud","#artistBios","#artists","#bandCamp","#about"];	    
+	    var data = $(this).data("pointer");
+	  
+	    for (i=0;i<a.length;i++){
+	    	$(a[i]).fadeOut("slow");
+	        $(a[i]).addClass("hide");
+	};	
+        $(data).removeClass("hide");
+        $(data).fadeIn("slow");
 	});

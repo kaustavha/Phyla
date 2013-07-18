@@ -179,6 +179,18 @@ a:hover { color: #777; }
   position: absolute;
   top:0;
 }
+.socialButtons{
+  width: 10px;
+  height: 33% !important;
+  position: relative;
+  display: inline-block !important;
+  border: 0px !important;
+}
+.socialIcons{
+  border:1px solid #ddd;
+  margin-left:0px;
+  width:122%;
+}
 @media (max-width: 480px) {
   .social{
     margin-left:100px;
